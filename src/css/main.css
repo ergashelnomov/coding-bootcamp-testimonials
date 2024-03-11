@@ -129,26 +129,38 @@ body {
           transform: rotate(180deg);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .wrapper {
-    background: url(/src/img/mobile_bg.png) no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    padding: 0 32px;
+    height: 100%;
+    padding: 54px 32px 75px 32px;
   }
   .wrapper .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .wrapper .container .info {
+    text-align: center;
+    position: static;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper {
+    height: 100vh;
+    background: url(/src/img/mobile_bg.png) no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    padding: 0 32px;
+  }
+  .wrapper .container {
     gap: 32px;
     max-width: 311px;
   }
   .wrapper .container .info {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: static;
     height: 228px;
     gap: 19px;
     background-position: 126px 0;
