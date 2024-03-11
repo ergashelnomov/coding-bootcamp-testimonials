@@ -21,7 +21,7 @@ body {
   width: 100%;
   height: 100vh;
   background: url(/src/img/desktop_bg.png) no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,7 +152,7 @@ body {
   .wrapper {
     height: 100vh;
     background: url(/src/img/mobile_bg.png) no-repeat;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-position: center;
     padding: 54px 32px 75px 32px;
     -webkit-box-align: start;
