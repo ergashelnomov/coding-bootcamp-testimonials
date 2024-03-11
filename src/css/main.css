@@ -20,9 +20,9 @@ body {
 .wrapper {
   width: 100%;
   height: 100vh;
-  background: url(/src/img/desktop_bg.png) no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
+  background: url(/src/img/bg-img.png) no-repeat;
+  background-size: 610px 150px;
+  background-position: left bottom;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,6 +95,21 @@ body {
   line-height: 190%;
   color: #b9b9ce;
 }
+.wrapper .container .slide-box {
+  padding: 63px 92px 54px 65px;
+  background: url(/src/img/Group.png) no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 .wrapper .container .slide-box img {
   max-width: 540px;
   border-radius: 5px;
@@ -102,9 +117,9 @@ body {
           box-shadow: 0 40px 50px -30px rgba(36, 36, 113, 0.5);
 }
 .wrapper .container .slide-box button {
-  -webkit-transform: translate(62px, -30px);
-      -ms-transform: translate(62px, -30px);
-          transform: translate(62px, -30px);
+  -webkit-transform: translate(-362px, -30px);
+      -ms-transform: translate(-362px, -30px);
+          transform: translate(-362px, -30px);
   border-radius: 28px;
   max-width: 112px;
   width: 100%;
@@ -151,9 +166,7 @@ body {
 @media screen and (max-width: 600px) {
   .wrapper {
     height: 100vh;
-    background: url(/src/img/mobile_bg.png) no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
+    background-size: auto;
     padding: 54px 32px 75px 32px;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -186,13 +199,16 @@ body {
     line-height: 133%;
     text-align: center;
   }
+  .wrapper .container .slide-box {
+    padding: 30px 36px 24px 37px;
+  }
   .wrapper .container .slide-box img {
     max-width: 254px;
   }
   .wrapper .container .slide-box button {
-    -webkit-transform: translate(87px, -24px);
-        -ms-transform: translate(87px, -24px);
-            transform: translate(87px, -24px);
+    -webkit-transform: translate(-87px, -20px);
+        -ms-transform: translate(-87px, -20px);
+            transform: translate(-87px, -20px);
     max-width: 80px;
     height: 40px;
     gap: 34px;
